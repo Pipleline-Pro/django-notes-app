@@ -1,6 +1,13 @@
 version: "3.8"
 
 services:
+  web:
+    image: "vivekasharma01/notes-app:latest"
+     ports:
+      - "80:80"
+
+    
+services:
   nginx:
     build: ./nginx
     image: nginx
